@@ -19,6 +19,6 @@ LIMIT 5;
 ```SQL
 SELECT last_name, store_id FROM CUSTOMER
 WHERE store_id = 1
-ORDER BY last_name ASC
+ORDER BY last_name DESC
 LIMIT 4;
 ```
