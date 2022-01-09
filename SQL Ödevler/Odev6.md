@@ -12,10 +12,10 @@ WHERE title LIKE 'C%';
 > ## Soru 3
 ```SQL
 SELECT MAX(length) FROM film
-WHERE rental_rate = 0.99
+WHERE rental_rate = 0.99;
 ```
 > ## Soru 4
 ```SQL
 SELECT COUNT(replacement_cost) FROM film
-WHERE length > 150
+WHERE length > 150;
 ```
