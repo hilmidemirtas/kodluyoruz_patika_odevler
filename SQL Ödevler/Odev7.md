@@ -15,7 +15,7 @@ HAVING(COUNT(*)) > 50
 > ## Soru 3
 ```SQL
 SELECT store_id, COUNT(*) FROM customer
-GROUP BY store_id
+GROUP BY store_id;
 ```
 
 > ## Soru 4
