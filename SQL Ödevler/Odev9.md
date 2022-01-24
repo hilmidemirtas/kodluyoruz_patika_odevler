@@ -3,15 +3,15 @@
 
 SELECT city, country 
 FROM city
-INNER JOIN country on city.country_id = country.country_id
+INNER JOIN country on city.country_id = country.country_id;
 
 ```
 
 > ## Soru 2
 ```SQL
-SELECT replacement_cost, COUNT(*) FROM film
-GROUP BY replacement_cost
-HAVING(COUNT(*)) > 50
+SELECT payment_id, first_name, last_name 
+FROM customer
+INNER JOIN payment on customer.customer_id = payment.customer_id;
 
 ```
 
@@ -21,10 +21,4 @@ SELECT store_id, COUNT(*) FROM customer
 GROUP BY store_id;
 ```
 
-> ## Soru 4
-```SQL
-SELECT country_id, COUNT(*) FROM city
-GROUP BY country_id
-ORDER BY COUNT(*) DESC
-LIMIT 1;
-```
+
