@@ -17,8 +17,11 @@ INNER JOIN payment on customer.customer_id = payment.customer_id;
 
 > ## Soru 3
 ```SQL
-SELECT store_id, COUNT(*) FROM customer
-GROUP BY store_id;
+
+SELECT rental_id, first_name, last_name 
+FROM rental
+INNER JOIN customer on rental.customer_id = customer.customer_id
+
 ```
 
 
