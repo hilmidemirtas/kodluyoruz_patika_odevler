@@ -22,22 +22,22 @@ O O O O O O O O O O O O O O O O   */
 
 <?php
 
-function triangle($value)
+function ucgen($deger)
 {
-    if ($value >= 1) {
+    if ($deger >= 1) {
         $counter = 1;
-        $result = "";
-        while ($counter <= $value) {
+        $sonuc = "";
+        while ($counter <= $deger) {
             for ($i = 1; $i <= $counter; $i++) {
-                $result .= 0;
+                $sonuc .= 0;
             }
-            $result .= "<br>";
+            $sonuc .= "<br>";
             $counter++;
         }
     } else {
-        $result = "Please enter a number of 1 or greater.";
+        $sonuc = "birden büyük sayı giriniz!";
     }
-    return $result;
+    return $sonuc;
 }
 
-echo triangle(15);
+echo ucgen(15);
