@@ -47,3 +47,6 @@ function ucgen($deger)
 }
 
 echo ucgen(15);
+
+
+//ödev 1
